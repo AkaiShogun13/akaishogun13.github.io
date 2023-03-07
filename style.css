@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,8 +6,8 @@
 }
 
 body {
-    font-family: 'Rampart One', cursive;
-    background: linear-gradient(to right, #7fa0af 0%, #a7bcc5 100%) 
+    font-family: 'Playfair Display', serif;
+    background: #f5f5f5;
 }
 
 .main-container {
@@ -24,7 +22,8 @@ body {
     flex-direction: column;
     width: 600px;
     min-height: 100vh;
-    background-color: #ffffff3b;
+    background: linear-gradient(to right, #b4b2a7c9, #dad6c9be);
+    border: 2px solid #69520e;
     margin: auto;
     gap: 10px;
     padding-top: 20px;
@@ -33,6 +32,7 @@ body {
 
 .title {
     text-align: center;
+    font-style: italic;
     font-size: 2.5rem;
     background: linear-gradient( #ba8b02 0%, #181818 100%);
     background-size: 100%;
@@ -52,7 +52,8 @@ body {
 
 input {
     align-items: center;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: inherit;
+    color: #69520e;
     border: 0;
     outline: 0;
     width: 65%;
@@ -71,6 +72,10 @@ input {
     -webkit-text-fill-color: transparent;
 }
 
+#icon:hover {
+    transform: scale(1.1);
+}
+
 #grocery-items {
     display: flex;
     flex-direction: column;
@@ -78,11 +83,12 @@ input {
     margin-top: 15px;
     width: 75%;
     font-size: 1.5rem;
-    color: black;
 }
 
 #grocery-items li {
     cursor: pointer;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: inherit;
     text-transform: capitalize;
+    font-weight: bold;
+    color: #584711;
 }
